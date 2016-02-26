@@ -7,7 +7,7 @@ MY_LOCAL_PATH := $(call my-dir)
 ifeq ($(BOARD_USES_LEGACY_ALSA_AUDIO),true)
 include $(MY_LOCAL_PATH)/legacy/Android.mk
 else
-include $(MY_LOCAL_PATH)/hal/Android.mk
+include $(MY_LOCAL_PATH)/hal_old/Android.mk
 endif
 
 endif
