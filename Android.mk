@@ -1,3 +1,4 @@
+ifeq ($(TARGET_QCOM_AUDIO_VARIANT),caf-msm8960)
 ifneq ($(filter msm8960 msm8226 msm8x26 msm8974 msm8x74,$(TARGET_BOARD_PLATFORM)),)
 
 MY_LOCAL_PATH := $(call my-dir)
@@ -8,4 +9,5 @@ else
 include $(MY_LOCAL_PATH)/hal/Android.mk
 endif
 
+endif
 endif
